@@ -1,0 +1,21 @@
+
+
+
+GENERIC VIEWS. 
+REST framework takes advantage of this by providing a number of pre-built views that provide for commonly used patterns.
+the generic views don't suit the needs of your API, you can drop down to using the regular APIView class, or reuse the mixins and base classes used by the generic views to compose your own set of reusable generic views.
+
+Modifications are done to views.py and urls.py
+
+
+AUTHENTICATION
+- There are three types of authentication: session authentication, basic authenticattion, token authentication
+- There are three ways to set up authentication. (refer to the documentation.) 
+- In this project, we set up authentication by modifying the views.py file
+- after you have added authentication to your project, you have to be logged in for you to access the api. 
+in post man, provide your username and password under authorization tab. 
+
+- for token authentication, add 'rest_framework.authtoken' under installed apps inside settings.py
+- run manage.py migrate
+- In the admin page, add token for users (done manualy for now)
+- 
